@@ -14,11 +14,13 @@ export const AboutUs = () => {
             Nasz napój wykorzystuje najnowsze odkrycia technoloincze, aby dostarczać energię przez dłuższy czas. Mikroelementy uwalniają się w czasie, przez co poziom energii nie podlega fluktucjom, a zamiast tego podnosi się stale do pewnego momentu, następnie utrzymując się.
         </p>
         <h3>Struktura</h3>
-        <Member memberName={"Eryk Ławniczak"} contact={"eryk.lawniczak@student.put.poznan.pl"} position={"Founder"} />
-        <Member memberName={"Krystian Jakusik"} contact={"krystian.jakusik@student.put.poznan.pl"} position={"CEO"} />
+        <div className="member-list">
+            <Member memberName={"Eryk Ławniczak"} contact={"eryk.lawniczak@student.put.poznan.pl"} position={"Founder"} />
+            <Member memberName={"Krystian Jakusik"} contact={"krystian.jakusik@student.put.poznan.pl"} position={"CEO"} />
+        </div>
 
         <h3>Kontakt</h3>
-        <ul>
+        <ul className="contact-list">
             <li>Email: liquid.energy@mail.com</li>
             <li>Telefon: +48 123 123 123</li>
             <li>Adres: pl. Marii Skłodowskiej-Curie 60-965 Poznań</li>
@@ -38,7 +40,7 @@ export const Member = (props: { memberName: any, position, contact: any }) => {
             {position}
         </div>
         <div className="memberContact">
-            {contact}
+            <a href={`mailto:${{contact}}`}>{contact}</a>
         </div>
     </div>
 }
