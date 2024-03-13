@@ -1,4 +1,5 @@
 import { AboutUs } from "../pages/AboutUs"
+import { AskUs } from "../pages/AskUs"
 import { GamePage } from "../pages/GamePage"
 import { HomePage } from "../pages/HomePage"
 import { MainLayout } from "./Layout"
@@ -34,6 +35,15 @@ export const projectComponents = [
         path: "/promocja",
         element: <MainLayout>
             <GamePage />
+        </MainLayout>,
+        isVisible: true,
+
+    },
+    {
+        label: "Zapytaj nas",
+        path: "/zapytaj",
+        element: <MainLayout>
+            <AskUs />
         </MainLayout>,
         isVisible: true,
 

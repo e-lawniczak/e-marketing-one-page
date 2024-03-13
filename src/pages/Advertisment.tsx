@@ -1,7 +1,7 @@
 import { images } from "../common/images"
 import { Image } from "../components/Image"
 
-export const Advertisment = (props: { isFixed?: boolean, type?: "main" | "verticalAd" | "horizontalAd" | "inTextAd" | "popupAd" | "noAd" }) => {
+export const Advertisement = (props: { isFixed?: boolean, type?: "main" | "verticalAd" | "horizontalAd" | "inTextAd" | "popupAd" | "noAd" }) => {
     const { type = "horizontalAd", isFixed = false } = props
 
     return <div className={["ad-content", isFixed ? "fixed" : ""].join(" ")}>

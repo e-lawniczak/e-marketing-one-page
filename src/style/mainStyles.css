@@ -53,8 +53,13 @@ body {
 }
 .main-content .page-wrapper {
   display: grid;
-  grid-template-columns: 1px auto 200px;
+  grid-template-columns: 1px auto 150px;
   gap: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .main-content .page-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .img-container {
@@ -62,6 +67,10 @@ body {
 }
 .img-container img {
   max-width: 100%;
+}
+
+.right-space.ad .ad-content {
+  padding-left: 0;
 }
 
 .ad .ad-content {
@@ -89,6 +98,10 @@ footer {
 section.section {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 section.section p {
   margin: 0;
@@ -169,4 +182,69 @@ section.section .section-content {
   border-bottom-left-radius: 0;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+input,
+textarea {
+  background-color: #ebebeb;
+  padding: 6px 4px;
+  color: #242424;
+  width: 100%;
+  gap: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.contact-form {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.contact-form .inputs {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+.contact-form .inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-form .inputs textarea {
+  margin-top: 5px;
+  height: 80px;
+}
+.contact-form button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.faq {
+  padding: 15px;
+}
+
+.how-to {
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.how-to li {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.how-to li:nth-child(2) {
+  margin-left: 70px;
+}
+.how-to li:nth-child(3) {
+  margin-left: 140px;
+}
+.how-to li:nth-child(4) {
+  margin-left: 210px;
+}
+.how-to li:nth-child(5) {
+  margin-left: 280px;
 }

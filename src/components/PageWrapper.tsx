@@ -1,16 +1,20 @@
 import React from 'react'
-import { Advertisment } from '../pages/Advertisment'
+import { Advertisement } from '../pages/Advertisment'
+import { NavLink } from 'react-router-dom'
 
 export const PageWrapper = (props) => {
     return <div className="page page-wrapper">
         <div className="left-space ad">
-            <Advertisment type='noAd' />
+            <Advertisement type='noAd' />
         </div>
         <div className="content">
             {props?.children}
         </div>
         <div className="right-space ad">
-            <Advertisment isFixed={true} type='verticalAd' />
+            <NavLink to={'/promocja'}>
+            <Advertisement isFixed={true} type='verticalAd' />
+            
+            </NavLink>
         </div>
     </div>
 }

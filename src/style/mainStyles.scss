@@ -20,8 +20,14 @@ body {
 
     .page-wrapper {
         display: grid;
-        grid-template-columns: 1px auto 200px;
+        grid-template-columns: 1px auto 150px;
         gap: 10px;
+    }
+
+    @media only screen and (max-width:900px) {
+        .page-wrapper {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -33,6 +39,10 @@ body {
     }
 }
 
+.right-space.ad .ad-content {
+    padding-left: 0;
+
+}
 
 .ad .ad-content {
     padding: 10px;
@@ -41,7 +51,8 @@ body {
     @media only screen and (max-width:900px) {
         display: none;
     }
-    &.fixed{
+
+    &.fixed {
         position: fixed;
     }
 }
@@ -58,6 +69,10 @@ footer {
 section.section {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
 
     p {
         margin: 0;
@@ -152,4 +167,83 @@ section.section {
         width: fit-content;
     }
 
+}
+
+input,
+textarea {
+    background-color: #ebebeb;
+    padding: 6px 4px;
+    color: #242424;
+    width: 100%;
+    gap: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.contact-form {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    .inputs {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+
+        &>div {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        textarea {
+            margin-top: 5px;
+            height: 80px;
+        }
+    }
+
+    button {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.faq {
+    padding: 15px;
+}
+
+.how-to {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+
+    li {
+        width: fit-content;
+        $dim: 70px;
+        margin-bottom: 15px;
+
+        &:nth-child(1) {}
+
+        &:nth-child(2) {
+            margin-left: $dim * 1;
+        }
+
+        &:nth-child(3) {
+            margin-left: $dim * 2;
+
+        }
+
+        &:nth-child(4) {
+            margin-left: $dim * 3;
+
+        }
+
+        &:nth-child(5) {
+            margin-left: $dim * 4;
+
+        }
+    }
 }

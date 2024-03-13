@@ -1,25 +1,26 @@
 import React from 'react'
 import { PageWrapper } from '../components/PageWrapper'
-import { Advertisment } from './Advertisment'
+import { Advertisement } from './Advertisment'
 import { Image } from '../components/Image'
 
 export const HomePage = (props) => {
     return <PageWrapper>
-        <Advertisment type='main' />
+        <Advertisement type='main' />
         <ContentSection title='Liquid Energy?' mode='left' wrapperClass='section-1'>
             <Image wrapperClass='main-product-image' src={'./images/product.gif'} />
             <p>
-                Niesamowity napój energetyczny, cechujący się najzdrowszym składem.
+                Niesamowity napój energetyczny, cechujący się najzdrowszym składem. Najnowsze osiągnięcie w dziedzinach dietetyki i żywienia. W skład napoju wchodzą naturlane składniki, dzięki którym Liquid Enery zawdzięcza swoje unikalne działanie i niepowtarzalny smak.
             </p>
 
         </ContentSection>
         <ContentSection title='Dlaczego produkt jest lepszy?' mode='right' wrapperClass='section-2'>
             <p>
-                Skład Liquid Energy został stworzony we współpracy najtęższych umysłów w dziedzinie żywienia i dietetyki. Cały proces był wpomagany, przez najnowsze algorytmy szucznej inteligencji, szkolone na studentach AWF i byczkach z siłki.
+                Skład Liquid Energy został stworzony we współpracy najtęższych umysłów w dziedzinie żywienia i dietetyki. Cały proces był wpomagany, przez najnowsze algorytmy szucznej inteligencji, szkolone na studentach AWF i byczkach z siłki. <br /><br />
+                Naturalne składniki zapewniają stały przypływ energii, zamiast chwilowego zastrzyku.
             </p>
             <Image wrapperClass='main-product-image' src={'./images/productCan.gif'} />
         </ContentSection>
-        <ContentSection title='Lista dostępnych sklepów' mode='left' wrapperClass='section-3'>
+        <ContentSection title='Lista dostępnych sklepów' mode='center' wrapperClass='section-3'>
 
             <ul className='image-list'>
                 <li>
@@ -39,7 +40,7 @@ export const HomePage = (props) => {
                 </li>
             </ul>
         </ContentSection>
-        <Advertisment type='horizontalAd' />
+        <Advertisement type='horizontalAd' />
         <ContentSection title='Newsletter' mode='center' wrapperClass='section-4'>
             <div className="text">
                 Zapisz się do newslettera, aby otrzymywać informacje o najnowszych promocjach i wydarzeniach.
