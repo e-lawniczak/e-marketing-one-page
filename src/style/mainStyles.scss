@@ -264,6 +264,9 @@ textarea {
 
         &:nth-child(5) {
             margin-left: $dim * 4;
+        }
+        &:nth-child(6) {
+            margin-left: $dim * 5;
             font-size: 1.5em;
         }
     }
