@@ -1,10 +1,12 @@
 import { images } from "../common/images"
 import { Image } from "../components/Image"
 
-export const Advertisment = (props: { type?: "verticalAd" | "horizontalAd" | "inTextAd" | "popupAd" }) => {
+export const Advertisment = (props: { type?: "verticalAd" | "horizontalAd" | "inTextAd" | "popupAd" | "noAd" }) => {
     const { type = "horizontalAd" } = props
- 
+
     return <div className="ad-content">
-        <Image src={images[type]} />
+        {type != "noAd" &&
+            <Image src={images[type]} />
+        }
     </div>
 }

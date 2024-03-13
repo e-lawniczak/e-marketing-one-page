@@ -1,14 +1,9 @@
 @import "./menu";
 
-*{
+* {
     box-sizing: border-box;
 }
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .layout {
     display: grid;
@@ -18,4 +13,27 @@ header {
 
 body {
     position: relative;
+}
+
+.main-content {
+    padding-top: 3rem;
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        gap: 10px;
+    }
+}
+.img-container{
+    display: flex;
+    img{
+        max-width: 100%;
+    }
+}
+
+
+.ad .ad-content {
+    padding: 10px;
+    @media only screen and (max-width:900px) {
+        display: none;
+    }
 }

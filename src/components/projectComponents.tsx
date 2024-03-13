@@ -10,10 +10,28 @@ export interface ProjetLink {
 export const baseRoot = "https://localhost:7013/api"
 export const projectComponents = [
     {
-        label: "Home",
+        label: "Liquid Energy",
         path: "/",
         element: <MainLayout>
             <HomePage />
+        </MainLayout>,
+        isVisible: true,
+
+    },
+    {
+        label: "O nas",
+        path: "/",
+        element: <MainLayout>
+            <></>
+        </MainLayout>,
+        isVisible: true,
+
+    },
+    {
+        label: "Promocja",
+        path: "/",
+        element: <MainLayout>
+            <></>
         </MainLayout>,
         isVisible: true,
 

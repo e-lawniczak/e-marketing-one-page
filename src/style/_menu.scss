@@ -2,14 +2,39 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    box-shadow: 0 -5px 15px 5px black;
+    background-color: #242424;
+    z-index: 100;
+    padding: 1.5rem 0;
 
-    .menu-opt {
-        padding: 6px 12px;
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
 
-        &:hover {
-            background-color: #213547aa;
+        .menu-opt {
+            padding: 6px 12px;
+            font-size: 1.8em;
+
+            &:hover {
+                background-color: #213547aa;
+            }
+        }
+    }
+
+    .logo {
+        max-height: 80px;
+        display: flex;
+
+
+        .img-container {
+            max-height: 100%;
+            max-width: 100%;
+            img{
+                max-width: 100%;
+            }
         }
     }
 }
