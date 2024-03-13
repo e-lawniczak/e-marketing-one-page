@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+body {
+  position: relative;
+}
+
+.data-table tr {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.data-table td {
+  padding: 5px 10px;
+}
+.data-table .row {
+  background-color: #444444;
+}
+.data-table .row:hover {
+  background-color: rgba(68, 68, 68, 0.6666666667);
+}
+.data-table .alt-row {
+  background-color: #666666;
+}
+.data-table .alt-row:hover {
+  background-color: rgba(102, 102, 102, 0.6666666667);
+}
+
+.honey-form {
+  display: grid;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(11, auto);
+}
+
+.input-control {
+  width: 100%;
+  max-width: 100%;
+}
+.input-control input {
+  width: 100%;
+}
+
+.filter {
+  display: flex;
+  gap: 5px;
+}
+.filter label {
+  text-align: left;
+}
+.filter .input-control {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.stats-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.stats-table .stat-row {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}
