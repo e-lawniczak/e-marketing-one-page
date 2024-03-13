@@ -4,7 +4,7 @@ import { projectComponents } from './projectComponents'
 
 export const MainLayout = (props: { children, [x: string]: any }) => {
     const
-        menu = projectComponents.map((p, idx) => <NavLink key={idx} to={p.path}  >{p.label}</NavLink>)
+        menu = projectComponents.map((p, idx) => <NavLink className={"menu-opt"} key={idx} to={p.path}  >{p.label}</NavLink>)
     return <div className="layout marketing">
         <header>
             {menu}

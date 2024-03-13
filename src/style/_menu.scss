@@ -1,0 +1,15 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .menu-opt {
+        padding: 6px 12px;
+
+        &:hover {
+            background-color: #213547aa;
+        }
+    }
+}

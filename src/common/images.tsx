@@ -1,3 +1,6 @@
 export const images = {
-    skyScraper: "./images/sky-scraper.png"
+    verticalAd: "./images/sky-scraper.png",
+    horizontalAd: "./images/horizontal.png", 
+    inTextAd: "./images/inText.png", 
+    popupAd: "./images/popup.png"
 }

@@ -3,6 +3,6 @@ import { PageWrapper } from '../components/PageWrapper'
 
 export const HomePage = (props) =>{
 return <PageWrapper>
-   
+   Wat
 </PageWrapper>
 }
