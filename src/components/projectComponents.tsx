@@ -8,7 +8,8 @@ export interface ProjetLink {
     path: string,
     element: any,
     isVisible: boolean,
-    label: string
+    label: string,
+    className?:string
 }
 export const baseRoot = "https://localhost:7013/api"
 export const projectComponents = [
@@ -37,7 +38,7 @@ export const projectComponents = [
             <GamePage />
         </MainLayout>,
         isVisible: true,
-
+        className: "emph "
     },
     {
         label: "Zapytaj nas",
