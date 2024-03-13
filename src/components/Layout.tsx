@@ -8,14 +8,17 @@ export const MainLayout = (props: { children, [x: string]: any }) => {
         menu = projectComponents.map((p, idx) => <NavLink className={"menu-opt"} key={idx} to={p.path}  >{p.label}</NavLink>)
     return <div className="layout marketing">
         <header>
-            <div className="logo">
+            <NavLink to={"/"} className="logo">
                 <Image src={'./images/logo.png'} />
-            </div>
+            </NavLink>
             <nav>{menu}</nav>
             <div className=""></div>
         </header>
         <div className="main-content">
             {props?.children}
         </div>
+        <footer>
+            LiquidEnergy &copy; Krystian Jakusik & Eryk Ławniczak
+        </footer>
     </div>
 }

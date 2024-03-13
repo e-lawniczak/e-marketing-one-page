@@ -10,7 +10,7 @@ export const PageWrapper = (props) => {
             {props?.children}
         </div>
         <div className="right-space ad">
-            <Advertisment type='verticalAd' />
+            <Advertisment isFixed={true} type='verticalAd' />
         </div>
     </div>
 }

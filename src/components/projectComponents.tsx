@@ -1,3 +1,5 @@
+import { AboutUs } from "../pages/AboutUs"
+import { GamePage } from "../pages/GamePage"
 import { HomePage } from "../pages/HomePage"
 import { MainLayout } from "./Layout"
 
@@ -20,21 +22,21 @@ export const projectComponents = [
     },
     {
         label: "O nas",
-        path: "/",
+        path: "/o-nas",
         element: <MainLayout>
-            <></>
+            <AboutUs />
         </MainLayout>,
         isVisible: true,
 
     },
     {
         label: "Promocja",
-        path: "/",
+        path: "/promocja",
         element: <MainLayout>
-            <></>
+            <GamePage />
         </MainLayout>,
         isVisible: true,
 
     },
-   
+
 ] as ProjetLink[]

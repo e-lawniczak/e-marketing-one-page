@@ -16,16 +16,19 @@ body {
 }
 
 .main-content {
-    padding-top: 3rem;
+    padding-top: 150px;
+
     .page-wrapper {
         display: grid;
-        grid-template-columns: 200px auto 200px;
+        grid-template-columns: 1px auto 200px;
         gap: 10px;
     }
 }
-.img-container{
+
+.img-container {
     display: flex;
-    img{
+
+    img {
         max-width: 100%;
     }
 }
@@ -33,7 +36,120 @@ body {
 
 .ad .ad-content {
     padding: 10px;
+    padding-top: 0;
+
     @media only screen and (max-width:900px) {
         display: none;
     }
+    &.fixed{
+        position: fixed;
+    }
+}
+
+footer {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #242424bb;
+}
+
+section.section {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+
+    &.left {
+        justify-content: flex-start;
+
+        h3,
+        p {
+            text-align: left;
+        }
+    }
+
+    &.right {
+        justify-content: flex-end;
+
+        h3,
+        p {
+            text-align: right;
+        }
+
+    }
+
+    &.center {
+        justify-content: center;
+
+        h3,
+        p {
+            text-align: center;
+        }
+
+    }
+
+    .section-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+}
+
+.image-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    li {
+        max-width: 100px;
+    }
+}
+
+.main-product-image {
+    max-width: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.form-control {
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+    input {
+        width: auto;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+        background-color: #ebebeb;
+        padding: 6px 4px;
+        height: 40px;
+        color: #242424;
+    }
+
+    button {
+        height: 40px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: fit-content;
+    }
+
 }
