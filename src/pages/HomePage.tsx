@@ -6,7 +6,7 @@ import { Image } from '../components/Image'
 export const HomePage = (props) => {
     return <PageWrapper>
         <Advertisement type='main' />
-        <ContentSection title='Liquid Energy?' mode='left' wrapperClass='section-1'>
+        <ContentSection title='Czym jest PRIDA?' mode='left' wrapperClass='section-1'>
             <Image wrapperClass='main-product-image' src={'./images/product.gif'} />
             <p>
                 Niesamowity napój energetyczny, cechujący się najzdrowszym składem. Najnowsze osiągnięcie w dziedzinach dietetyki i żywienia. W skład napoju wchodzą naturlane składniki, dzięki którym Liquid Enery zawdzięcza swoje unikalne działanie i niepowtarzalny smak.
@@ -15,7 +15,7 @@ export const HomePage = (props) => {
         </ContentSection>
         <ContentSection title='Dlaczego produkt jest lepszy?' mode='right' wrapperClass='section-2'>
             <p>
-                Skład Liquid Energy został stworzony we współpracy najtęższych umysłów w dziedzinie żywienia i dietetyki. Cały proces był wpomagany, przez najnowsze algorytmy szucznej inteligencji, szkolone na studentach AWF i byczkach z siłki. <br /><br />
+                Skład PRIDA został stworzony we współpracy najtęższych umysłów w dziedzinie żywienia i dietetyki. Cały proces był wpomagany, przez najnowsze algorytmy szucznej inteligencji. <br /><br />
                 Naturalne składniki zapewniają stały przypływ energii, zamiast chwilowego zastrzyku.
             </p>
             <Image wrapperClass='main-product-image' src={'./images/productCan.gif'} />

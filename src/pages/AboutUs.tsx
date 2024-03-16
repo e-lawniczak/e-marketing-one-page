@@ -5,8 +5,8 @@ export const AboutUs = () => {
     return <PageWrapper>
         <Advertisement type="horizontalAd" />
         <h1>O nas</h1>
-        <p>LiquidEnergy to nowa firma na rynku napojów energetycznych. Oferujemy zupełnie nową jakość produktu. Dzięki najnowszym osiągnięciom technologicznym byliśmy w stanie stworzyć napój LiquidEnergy. </p>
-        <h3>Liquid Energy</h3>
+        <p>PRIDA to nowa firma na rynku napojów energetycznych. Oferujemy zupełnie nową jakość produktu. Dzięki najnowszym osiągnięciom technologicznym byliśmy w stanie stworzyć napój PRIDA. </p>
+        <h3>PRIDA</h3>
         <p>
             Napój dotarcza składników odżywczych i energii przez dłuższy czas niż standardowe produkty tego typu. Dotychczasowe substancje oferują szybki zastrzyk energi za pomocą kofeiny, pochodnych cukru lub co gorsza samego cukru.
         </p>

@@ -9,7 +9,7 @@ export const MainLayout = (props: { children, [x: string]: any }) => {
     return <div className="layout marketing">
         <header>
             <NavLink to={"/"} className="logo">
-                <Image src={'./images/logo.png'} />
+                <Image src={'./images/logo2.jpg'} />
             </NavLink>
             <nav>{menu}</nav>
             <div className=""></div>
@@ -18,7 +18,7 @@ export const MainLayout = (props: { children, [x: string]: any }) => {
             {props?.children}
         </div>
         <footer>
-            LiquidEnergy &copy; Krystian Jakusik & Eryk Ławniczak
+            PRIDA &copy; Krystian Jakusik & Eryk Ławniczak
         </footer>
     </div>
 }

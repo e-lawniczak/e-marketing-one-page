@@ -21,22 +21,22 @@ export const AskUs = () => {
         <h3>FAQ</h3>
         <div className="faq">
             <div className="content-1000">
-                <p><b>Gdzie dostępny jest Liquid Energy?</b></p>
-                <p>Liquid Energy znajdziesz na półkach w sklepach Żabka, Lidl, Duży Ben, Chata Polska oraz Kaufland.</p>
+                <p><b>Gdzie dostępny jest PRIDA?</b></p>
+                <p>PRIDA znajdziesz na półkach w sklepach Żabka, Lidl, Duży Ben, Chata Polska oraz Kaufland.</p>
             </div>
             <div className="content-1000">
-                <p><b>Czy Liquid Energy jest dostępne w innych miejscach?</b></p>
-                <p>Liquid Energy będzie partnerem wielu wydarzeń w przyszłości. Nabycie naszego produktu będzie możliwe w każdym miejscu, w którym dzieje się takie wydarzenie!
+                <p><b>Czy PRIDA jest dostępne w innych miejscach?</b></p>
+                <p>PRIDA będzie partnerem wielu wydarzeń w przyszłości. Nabycie naszego produktu będzie możliwe w każdym miejscu, w którym dzieje się takie wydarzenie!
                     <br />
                     Zapisz się do newslettera aby być na bierząco!
                 </p>
             </div>
             <div className="content-1000">
-                <p><b>Czy liquid energy jest szkodliwe dla zdrowia?</b></p>
-                <p>Nie! W przeciwieństwie do innych napojów energetycznych, Liquid Energy bazuje na naturalnych składnikach. W wyniku badań przeprowadzonych przez Europejski Instytut Żywienia spożywanie go nie ma szkodliwych efektów na zdrowie.</p>
+                <p><b>Czy PRIDA jest szkodliwe dla zdrowia?</b></p>
+                <p>Nie! W przeciwieństwie do innych napojów energetycznych, PRIDA bazuje na naturalnych składnikach. W wyniku badań przeprowadzonych przez Europejski Instytut Żywienia spożywanie go nie ma szkodliwych efektów na zdrowie.</p>
             </div>
             <div className="content-1000">
-                <p><b>Jak mogę wziąć udział w konkursie Liquid Energy?</b></p>
+                <p><b>Jak mogę wziąć udział w konkursie PRIDA?</b></p>
                 <p>Aby skorzystać z promocji w sieci sklepów Żabka wymagane jest zapisanie siędo newslettera. Następnym krokiem jest zdobycie wyniku wyższego niż 2000 w grze dostępnej na naszej stronie. <br />
                     Następnie wystarczy pokazać kod QR otrzymany na maila przy kasie.<br />To wszystko!</p>
             </div>

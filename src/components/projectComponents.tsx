@@ -14,7 +14,7 @@ export interface ProjetLink {
 export const baseRoot = "https://localhost:7013/api"
 export const projectComponents = [
     {
-        label: "Liquid Energy",
+        label: "PRIDA",
         path: "/",
         element: <MainLayout>
             <HomePage />
