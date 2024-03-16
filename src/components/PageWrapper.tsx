@@ -12,7 +12,8 @@ export const PageWrapper = (props) => {
         </div>
         <div className="right-space ad">
             <NavLink to={'/promocja'}>
-            <Advertisement isFixed={true} type='verticalAd' />
+            <Advertisement isFixed={true} type='noAd' />
+            {/* <Advertisement isFixed={true} type='verticalAd' /> */}
             
             </NavLink>
         </div>
