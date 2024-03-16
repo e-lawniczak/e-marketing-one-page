@@ -1,7 +1,7 @@
 export const images = {
-    verticalAd: "./images/sky-scraper.png",
-    horizontalAd: "./images/horizontal.png", 
+    verticalAd: "./images/vert.jpg",
+    horizontalAd: "./images/hor.gif", 
     inTextAd: "./images/inText.png", 
     popupAd: "./images/popup.png",
-    main: "./images/main.png",
+    main: "./images/bannner.jpg",
 }

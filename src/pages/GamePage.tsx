@@ -19,7 +19,7 @@ export const GamePage = () => {
             <li>Ciesz się PRIDA!</li>
         </ol>
         <div className="game">
-            [tu będzie link do gry czy coś]
+            <a href="./game.zip">POBIERZ GRĘ</a>
         </div>
     </PageWrapper>;
 }
