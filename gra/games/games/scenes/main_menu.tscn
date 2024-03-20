@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://cq1s13uvycmau"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_0nrmm"]
+[ext_resource type="Texture2D" uid="uid://dy7p2fxpgb2gj" path="res://menu/bottle.png" id="2_8o7k7"]
+[ext_resource type="Texture2D" uid="uid://dwh7wr3ixae55" path="res://menu/logo.png" id="3_d8e17"]
+[ext_resource type="Texture2D" uid="uid://df3xlbya8jx62" path="res://menu/Play.png" id="4_syguu"]
+[ext_resource type="Texture2D" uid="uid://c1jvp8x2fm1i5" path="res://menu/levels/50.png" id="5_vs60g"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_0nrmm")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8o7k7")
+expand_mode = 1
+
+[node name="Title" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 629.0
+offset_top = -258.0
+offset_right = 1497.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_d8e17")
+
+[node name="StartButton" type="TextureButton" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 411.0
+offset_top = 103.0
+offset_right = 509.0
+offset_bottom = 187.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("4_syguu")
+texture_pressed = ExtResource("5_vs60g")
+stretch_mode = 0
+
+[connection signal="pressed" from="StartButton" to="." method="_on_level_1_pressed"]

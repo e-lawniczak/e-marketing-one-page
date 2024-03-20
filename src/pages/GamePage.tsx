@@ -13,13 +13,28 @@ export const GamePage = () => {
         <ol className="how-to">
             <li>Zapisz się do newslettera</li>
             <li>Pobierz i zagraj w grę</li>
-            <li>Osiągnij wynik wyższy niż 2000</li>
+            <li>Osiągnij wynik wyższy niż 4000</li>
             <li>Idź na zakupy do najlbliższej Żabki</li>
             <li>Odbierz kod QR na mailu i pokaż go przy kasie</li>
             <li>Ciesz się PRIDA!</li>
         </ol>
         <div className="game">
-            <a href="./game.zip">POBIERZ GRĘ</a>
+            <a href="./NinjaFrogAdventures.zip">POBIERZ GRĘ</a>
+        </div>
+        <div className="bonus">
+            <p>
+                <h2>
+                    Konkurs bonusowy
+                </h2>
+            </p>
+            <p>
+                Dodatkowo, 3 najwyższe wyniki otrzymają nagrod rzeczowe.
+            </p>
+            <ol className="bonus-contest">
+                <li>Konsola PlayStation5</li>
+                <li>Konsola XBox Series S</li>
+                <li>Zestaw czekolady Lint Lindor</li>
+            </ol>
         </div>
     </PageWrapper>;
 }

@@ -111,6 +111,18 @@ body {
   position: fixed;
 }
 
+.bonus-contest {
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.bonus-contest li {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
 footer {
   height: 80px;
   display: flex;

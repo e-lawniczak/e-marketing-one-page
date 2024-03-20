@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqw203egtib13"]
+
+[ext_resource type="Script" path="res://scenes/cherry.gd" id="1_4s7up"]
+[ext_resource type="Texture2D" uid="uid://b310cnv4quqmr" path="res://items/drink.png" id="1_jed0a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vkj13"]
+radius = 28.0
+height = 130.0
+
+[node name="Drink" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_4s7up")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -8)
+scale = Vector2(0.312, 0.312)
+texture = ExtResource("1_jed0a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -5)
+shape = SubResource("CapsuleShape2D_vkj13")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
