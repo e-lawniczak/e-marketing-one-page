@@ -40,6 +40,10 @@ export const AskUs = () => {
                 <p>Aby skorzystać z promocji w sieci sklepów Żabka wymagane jest zapisanie siędo newslettera. Następnym krokiem jest zdobycie wyniku wyższego niż 2000 w grze dostępnej na naszej stronie. <br />
                     Następnie wystarczy pokazać kod QR otrzymany na maila przy kasie.<br />To wszystko!</p>
             </div>
+            <div className="content-1000">
+                <p><b>Jak podjąć współpracę z firmą PRIDA</b></p>
+                <p>Jeśli chcesz podjąć z nami współpracę lub chcesz abyśmy znaleźli się na jednym z eventów - napisz do nas! Odezwiemy się do Ciebie i ustalimy szczegóły spotkania, na którym będziemy rozmawiać o współpracy.</p>
+            </div>
         </div>
     </PageWrapper>;
 }
